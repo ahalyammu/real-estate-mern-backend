@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+body{
+  font-family: "Merriweather", sans-serif;
+  overflow-x: hidden;
+  background-color: #F8F8F8;
+}
+
+header,footer{
+  background-color: #1A365D;
+}
+
+footer{
+  color: rgb(226 232 240);
+}
