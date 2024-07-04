@@ -31,10 +31,10 @@ app.use('/api/user',userRouter);
 app.use('/api/auth',authRouter);
 app.use('/api/listing',listingRouter);
 
-app.use(express.static(path.join(__dirname, '/client/dist')))
+app.use(express.static(path.join(__dirname, '/real-estate/dist')));
 
 app.get('*',(req,res,next)=>{
-    res.sendFile(path.join(__dirname, 'client/dist/index.html'))
+    res.sendFile(path.join(__dirname, 'real-estate', 'dist', 'index.html'))
 })
 
 app.use((err,req,res,next)=>{
